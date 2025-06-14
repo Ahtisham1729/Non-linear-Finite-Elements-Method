@@ -1,8 +1,5 @@
 import numpy as np
 
-
-
-
 def quadrature(f,matrix):
     F_ext_total = np.zeros((8,1))
     w_alpha = 1
@@ -54,24 +51,23 @@ def quadrature(f,matrix):
         F_ext_total += F_ext
     return F_ext_total
 
-rho = 300
-g = 9.81
-f = np.array([
-    [0],
-    [-rho*g]
-])
-a = 0
-b = 0
-l = 2
-nodal_location = np.array([
-    [a, a+3*l, a+3*l, a],
-    [b, b, b+l, b+l]
-])
-
-
-r = quadrature(f,nodal_location)
-print(r.shape)
-print(r)
+if __name__ == "__main__":
+    rho = 300
+    g = 9.81
+    f = np.array([
+        [0],
+        [-rho*g]
+        ])
+        a = 0
+        b = 0
+        l = 2
+        nodal_location = np.array([
+            [a, a+3*l, a+3*l, a],
+            [b, b, b+l, b+l]
+            ])
+    r = quadrature(f,nodal_location)
+    print(r.shape)
+    print(r)
 
 
 
