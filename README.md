@@ -12,10 +12,12 @@ The aim is to build a modular codebase that includes:
 ## Status
 
 Current development focus:
+- [x] Time integration schemes (Euler forward, Euler Backward, Midpoint Rule, Explicit second order Runge-Kutta)
 - [x] External force vector using Gauss quadrature
 - [ ] Element stiffness and internal force routines
 - [x] Newton-Raphson solver
 - [ ] Material model integration
+
 
 ## Requirements
 
