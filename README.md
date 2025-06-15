@@ -14,7 +14,7 @@ The aim is to build a modular codebase that includes:
 Current development focus:
 - [x] External force vector using Gauss quadrature
 - [ ] Element stiffness and internal force routines
-- [ ] Newton-Raphson solver
+- [x] Newton-Raphson solver
 - [ ] Material model integration
 
 ## Requirements
